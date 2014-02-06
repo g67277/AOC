@@ -19,6 +19,26 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
     
+
+    
+    NSString *strArray[5] = {
+        @"NSA", @"Encryption", @"Threats", @"American Freedoms", @"Splinter Cell"
+    };
+    
+    NSMutableString *dynamicString;
+    
+    
+    for (int x = 0; x < 5; x++) {
+        if (x == 4) {
+            
+        }else{
+        
+        }
+    }
+    
+    
+    //*********Positioning of labels*******
+    
     titleLabel =            [[UILabel alloc] initWithFrame:CGRectMake(0.0f, 20.0f, 320.0f, 30.0f)];
     authorLabel =           [[UILabel alloc] initWithFrame:CGRectMake(0.0f, 51.0f, 100.0f, 30.0f)];
     authorNameLabel =       [[UILabel alloc] initWithFrame:CGRectMake(101.0f, 51.0f, 219.0f, 30.0f)];
@@ -29,6 +49,7 @@
     listOItemsLabel =       [[UILabel alloc] initWithFrame:CGRectMake(0.0f, 445.0f, 100, 30.0f)];
     listLabel =             [[UILabel alloc] initWithFrame:CGRectMake(0.0f, 20.0f, 320.0f, 30.0f)];
 
+    //*********Labels formating************
     
     if (titleLabel != nil) {
         titleLabel.text = @"Tom Clancy's Splinter Cell #1";
@@ -40,35 +61,35 @@
     if (authorLabel != nil) {
         authorLabel.text = @"Author:";
         authorLabel.backgroundColor = [UIColor grayColor];
-        //Used "NSTextAlignmentCenter" because "UITextAlignmentCenter" from the video is deprecated
+        //Used "NSTextAlignmentRight" because "UITextAlignmentRight" from the video is deprecated
         authorLabel.textAlignment = NSTextAlignmentRight;
         authorLabel.textColor = [UIColor colorWithRed:255.f green: 190/255.f blue:0.0 alpha:1.0];
     }
     if (authorNameLabel != nil) {
         authorNameLabel.text = @"Tom Clancy";
         authorNameLabel.backgroundColor = [UIColor grayColor];
-        //Used "NSTextAlignmentCenter" because "UITextAlignmentCenter" from the video is deprecated
+        //Used "NSTextAlignmentLeft" because "UITextAlignmentLeft" from the video is deprecated
         authorNameLabel.textAlignment = NSTextAlignmentLeft;
         authorNameLabel.textColor = [UIColor colorWithRed:255.f green: 190/255.f blue:0.0 alpha:1.0];
     }
     if (publishedLabel != nil) {
         publishedLabel.text = @"Published:";
         publishedLabel.backgroundColor = [UIColor grayColor];
-        //Used "NSTextAlignmentCenter" because "UITextAlignmentCenter" from the video is deprecated
+        //Used "NSTextAlignmentRight" because "UITextAlignmentRight" from the video is deprecated
         publishedLabel.textAlignment = NSTextAlignmentRight;
         publishedLabel.textColor = [UIColor colorWithRed:255.f green: 190/255.f blue:0.0 alpha:1.0];
     }
     if (publishedDateLabel != nil) {
         publishedDateLabel.text = @"December 28, 2004";
         publishedDateLabel.backgroundColor = [UIColor grayColor];
-        //Used "NSTextAlignmentCenter" because "UITextAlignmentCenter" from the video is deprecated
+        //Used "NSTextAlignmentLeft" because "UITextAlignmentLeft" from the video is deprecated
         publishedDateLabel.textAlignment = NSTextAlignmentLeft;
         publishedDateLabel.textColor = [UIColor colorWithRed:255.f green: 190/255.f blue:0.0 alpha:1.0];
     }
     if (summeryLabel != nil) {
         summeryLabel.text = @"Summery:";
         summeryLabel.backgroundColor = [UIColor grayColor];
-        //Used "NSTextAlignmentCenter" because "UITextAlignmentCenter" from the video is deprecated
+        //Used "NSTextAlignmentLeft" because "UITextAlignmentLeft" from the video is deprecated
         summeryLabel.textAlignment = NSTextAlignmentLeft;
         summeryLabel.textColor = [UIColor colorWithRed:255.f green: 190/255.f blue:0.0 alpha:1.0];
     }
@@ -83,11 +104,13 @@
     if (listOItemsLabel != nil) {
         listOItemsLabel.text = @"List of items:";
         listOItemsLabel.backgroundColor = [UIColor grayColor];
-        //Used "NSTextAlignmentCenter" because "UITextAlignmentCenter" from the video is deprecated
+        //Used "NSTextAlignmentLeft" because "UITextAlignmentLeft" from the video is deprecated
         listOItemsLabel.textAlignment = NSTextAlignmentLeft;
         listOItemsLabel.textColor = [UIColor colorWithRed:255.f green: 190/255.f blue:0.0 alpha:1.0];
     }
     
+    
+    //******Adding labels to the main UIView******
     
     [self.view addSubview:titleLabel];
     [self.view addSubview:authorLabel];
