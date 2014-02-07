@@ -25,12 +25,17 @@
     NSString *strArray[5] = {
         @"NSA", @"Encryption", @"Threats", @"American Freedoms", @"Splinter Cell"
     };
+
     
     // Mutable string created and allocated
     
     NSMutableString *dynamicString = [[NSMutableString alloc] init];
     
     // Adding "and" only when x = 4, the last position in the array
+    
+    
+    
+    
     for (int x = 0; x < 5; x++) {
         if (x == 4) {
             [dynamicString appendString:@"and "];
@@ -66,42 +71,39 @@
         titleLabel.textAlignment = NSTextAlignmentCenter;
         titleLabel.textColor = [UIColor whiteColor];
     }
-    if (authorLabel != nil) {
+    if (authorLabel != nil && authorNameLabel != nil) {
         authorLabel.text = @"Author:";
         authorLabel.backgroundColor = [UIColor grayColor];
         // Used "NSTextAlignmentRight" because "UITextAlignmentRight" from the video is deprecated
         authorLabel.textAlignment = NSTextAlignmentRight;
         authorLabel.textColor = [UIColor colorWithRed:255.f green: 190/255.f blue:0.0 alpha:1.0];
-    }
-    if (authorNameLabel != nil) {
+        
         authorNameLabel.text = @"Tom Clancy";
         authorNameLabel.backgroundColor = [UIColor lightGrayColor];
         // Used "NSTextAlignmentLeft" because "UITextAlignmentLeft" from the video is deprecated
         authorNameLabel.textAlignment = NSTextAlignmentLeft;
         authorNameLabel.textColor = [UIColor colorWithRed:238/255.f green: 10/255.f blue:0/255.f alpha:0.7];
     }
-    if (publishedLabel != nil) {
+    if (publishedLabel != nil && publishedDateLabel != nil) {
         publishedLabel.text = @"Published:";
         publishedLabel.backgroundColor = [UIColor colorWithRed:178/255.f green:223/255.f blue:238/255.f alpha:1.0];
         // Used "NSTextAlignmentRight" because "UITextAlignmentRight" from the video is deprecated
         publishedLabel.textAlignment = NSTextAlignmentRight;
         publishedLabel.textColor = [UIColor grayColor];
-    }
-    if (publishedDateLabel != nil) {
+    
         publishedDateLabel.text = @"December 28, 2004";
         publishedDateLabel.backgroundColor = [UIColor colorWithRed:102/255.f green:139/255.f blue:139/255.f alpha:1.0];
         // Used "NSTextAlignmentLeft" because "UITextAlignmentLeft" from the video is deprecated
         publishedDateLabel.textAlignment = NSTextAlignmentLeft;
         publishedDateLabel.textColor = [UIColor colorWithRed:127/255.f green: 255/255.f blue:212/255.f alpha:1.0];
     }
-    if (summeryLabel != nil) {
+    if (summeryLabel != nil && bookSummeryLabel != nil) {
         summeryLabel.text = @"Summery:";
         summeryLabel.backgroundColor = [UIColor colorWithRed:152/255.f green:251/255.f blue:152/255.f alpha:1.0];
         // Used "NSTextAlignmentLeft" because "UITextAlignmentLeft" from the video is deprecated
         summeryLabel.textAlignment = NSTextAlignmentLeft;
         summeryLabel.textColor = [UIColor colorWithRed:139/255.f green: 90/255.f blue:0/255.f alpha:1.0];
-    }
-    if (bookSummeryLabel != nil) {
+    
         bookSummeryLabel.text = @"In response to the growing use of sophisticated digital encryption to conceal potential threats to the United States, the National Security Agency has ushered forth the new dawn of intelligence-gathering techniques. The top-secret initiative is dubbed Third Echelon.  Its existence denied by the U.S. government, Third Echelon deploys a lone field operative. He is sharp, nearly invisible, and deadly. And he has the right to spy, steal, destroy, and assassinate to protect American freedoms. His name is Sam Fisher. He is a Splinter Cell®.";
         bookSummeryLabel.numberOfLines = 16;
         bookSummeryLabel.backgroundColor = [UIColor colorWithRed:51/255.f green: 153/255.f blue:255/255.f alpha:1.0];
@@ -109,14 +111,14 @@
         bookSummeryLabel.textAlignment = NSTextAlignmentCenter;
         bookSummeryLabel.textColor = [UIColor colorWithRed:255 green: 204/255.f blue:153/255.f alpha:1.0];
     }
-    if (listOItemsLabel != nil) {
+    if (listOItemsLabel != nil && listLabel != nil) {
+        
         listOItemsLabel.text = @"List of items:";
         listOItemsLabel.backgroundColor = [UIColor colorWithRed:255/255.f green: 138/255.f blue:197/255.f alpha:1.0];
         // Used "NSTextAlignmentLeft" because "UITextAlignmentLeft" from the video is deprecated
         listOItemsLabel.textAlignment = NSTextAlignmentLeft;
         listOItemsLabel.textColor = [UIColor colorWithRed:51/255.f green: 51/255.f blue:51/255.f alpha:1.0];
-    }
-    if (listLabel != nil) {
+        
         listLabel.text = dynamicString;
         listLabel.numberOfLines = 2;
         listLabel.backgroundColor = [UIColor colorWithRed:94/255.f green: 255/255.f blue:0/255.f alpha:0.4];
