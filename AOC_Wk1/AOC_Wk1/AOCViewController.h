@@ -10,6 +10,10 @@
 
 @interface AOCViewController : UIViewController{
     
+    NSArray *strArray;
+    NSMutableString *dynamicString;
+    int arrayCount;
+    int index;
     UILabel *titleLabel;
     UILabel *authorLabel;
     UILabel *authorNameLabel;

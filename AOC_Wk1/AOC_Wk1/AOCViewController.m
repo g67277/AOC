@@ -17,36 +17,34 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
-    
-
     // Defining the 5 NSString items in the array
     
-    NSString *strArray[5] = {
+    strArray = @[
         @"NSA", @"Encryption", @"Threats", @"American Freedoms", @"Splinter Cell"
-    };
-
+    ];
     
     // Mutable string created and allocated
     
-    NSMutableString *dynamicString = [[NSMutableString alloc] init];
+    dynamicString = [[NSMutableString alloc] init];
     
-    // Adding "and" only when x = 4, the last position in the array
+    // int variable to hold array count - 2 for the "and"
     
+    arrayCount = [strArray count] - 2;
+    index = 0;
     
+    // looping through array
     
-    
-    for (int x = 0; x < 5; x++) {
-        if (x == 4) {
-            [dynamicString appendString:@"and "];
-            [dynamicString appendString:strArray[x]];
-            NSLog(@"%@", dynamicString);
-            
-        }else{
-            [dynamicString appendString:strArray[x]];
-            [dynamicString appendString:@", "];
-            NSLog(@"%@", dynamicString);
+    for (NSString *x in strArray) {
+        [dynamicString appendString:x];
+        // entering the if statement until its the last run through
+        if (index < arrayCount + 1) {
+        [dynamicString appendString:@", "];
+            if (index == arrayCount) {
+                [dynamicString appendString:@"and "];
+            }
         }
+        NSLog(@"%@", dynamicString);
+        index++;
     }
     
     
