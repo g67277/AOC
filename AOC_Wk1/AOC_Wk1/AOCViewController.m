@@ -47,7 +47,10 @@
         index++;
     }
     
+    // Setting background color
     
+    self.view.backgroundColor = [UIColor colorWithRed:255/255.f green: 255/255.f blue:247/255.f alpha:1.0];
+
     // Positioning of labels
     
     titleLabel =            [[UILabel alloc] initWithFrame:CGRectMake(0.0f, 20.0f, 320.0f, 30.0f)];
