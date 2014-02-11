@@ -1,8 +1,8 @@
 //
 //  main.m
-//  demoApp
+//  test2
 //
-//  Created by Nazir Shuqair on 2/9/14.
+//  Created by Nazir Shuqair on 2/10/14.
 //  Copyright (c) 2014 Me Time Studios. All rights reserved.
 //
 

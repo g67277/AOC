@@ -4,7 +4,7 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>demoApp.xcscheme</key>
+		<key>AOC_Wk2.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
@@ -12,12 +12,12 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>81F7B5DD18A7F7FC00F3E004</key>
+		<key>81F7B66718A9B68C00F3E004</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>81F7B5FE18A7F7FC00F3E004</key>
+		<key>81F7B68818A9B68C00F3E004</key>
 		<dict>
 			<key>primary</key>
 			<true/>

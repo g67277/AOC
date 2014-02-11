@@ -1,18 +1,18 @@
 //
-//  demoAppTests.m
-//  demoAppTests
+//  AOC_Wk2Tests.m
+//  AOC_Wk2Tests
 //
-//  Created by Nazir Shuqair on 2/9/14.
+//  Created by Nazir Shuqair on 2/10/14.
 //  Copyright (c) 2014 Me Time Studios. All rights reserved.
 //
 
 #import <XCTest/XCTest.h>
 
-@interface demoAppTests : XCTestCase
+@interface AOC_Wk2Tests : XCTestCase
 
 @end
 
-@implementation demoAppTests
+@implementation AOC_Wk2Tests
 
 - (void)setUp
 {

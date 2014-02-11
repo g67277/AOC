@@ -1,8 +1,8 @@
 //
 //  AOCAppDelegate.m
-//  demoApp
+//  test2
 //
-//  Created by Nazir Shuqair on 2/9/14.
+//  Created by Nazir Shuqair on 2/10/14.
 //  Copyright (c) 2014 Me Time Studios. All rights reserved.
 //
 
@@ -12,11 +12,6 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    self.viewController = [[AOCViewController alloc] initWithNibName:@"ViewController" bundle:nil];
-    
-    float widthValue = [self.viewController getWidthOfCGRect:CGRectMake(0, 0, 300.0f, 200.0f)];
-    
-    NSLog(@"%f", widthValue);
     // Override point for customization after application launch.
     return YES;
 }
