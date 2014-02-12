@@ -15,5 +15,6 @@
 - (int) getNumber;
 - (BOOL) compare:(NSInteger)num1 nsInt2:(NSInteger)num2;
 - (NSString *) appened:(NSString*)stringOne stringTwo:(NSString*)stringTwo;
+- (void) displayAlertWithString:(NSString*)strOne stringTwo:(NSString*)strTwo;
 
 @end

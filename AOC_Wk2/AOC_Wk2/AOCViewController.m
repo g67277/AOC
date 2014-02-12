@@ -16,10 +16,17 @@
 
 - (void)viewDidLoad
 {
+    // Adding background Image
     
+    self.view.backgroundColor = [UIColor colorWithPatternImage:[self getImage]];
+    [UIColor clearColor];
+    //-------------------------------------------------------------------------
+
     NSString *stringOne = @"The first string \"stringOne\" ";
     NSString *stringTwo = @"will be compained with \"stringTwo\".";
     NSString *alertOne = @"Pop up! Muahahaha!!!";
+    //-------------------------------------------------------------------------
+
 
     // 1 - Call the Append method with two NSStrings and display a UIAlertView with the appended string.
     
@@ -53,12 +60,12 @@
     // 5 - Call the Compare function with two integer values. If Compare returns YES, display an UIAlertView both with the input values and the result using the DisplayAlertWithString function
     
     NSInteger compareOne = 5;
-    NSInteger compareTwo = 6;
+    NSInteger compareTwo = 5;
     bool compareNSInt = [self compare:compareOne nsInt2:compareTwo];
-    NSLog(@"The 2 numbers %@ the same!", (compareNSInt ? @"are" : @"are not"));
+    NSLog(@"The 2 numbers %@ the same!", (compareNSInt ? @"are" : @"aren't"));
     if (compareNSInt == true) {
-        NSNumber *nsCompare1 = [[NSNumber alloc] initWithInt:compareOne];
-        NSNumber *nsCompare2 = [[NSNumber alloc] initWithInt:compareTwo];
+        NSNumber *nsCompare1 = [[NSNumber alloc] initWithLong:compareOne];
+        NSNumber *nsCompare2 = [[NSNumber alloc] initWithLong:compareTwo];
         NSString *strCompare1 = [nsCompare1 stringValue];
         NSString *strCompare2 = [nsCompare2 stringValue];
         NSString *result1 = [self appened:strCompare1 stringTwo:@" is equal to "];
@@ -117,6 +124,17 @@
     if (alerView != nil){
         [alerView show];
     }
+}
+
+// Centers and fills screen with image
+
+- (UIImage *) getImage{
+    UIGraphicsBeginImageContext(self.view.frame.size);
+    [[UIImage imageNamed:@"iPhone5@2x copy.png"] drawInRect:self.view.bounds];
+    UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    
+    return image;
 }
 
 - (void)didReceiveMemoryWarning

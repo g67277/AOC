@@ -21,6 +21,8 @@
 		81F7B68D18A9B68C00F3E004 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81F7B66F18A9B68C00F3E004 /* UIKit.framework */; };
 		81F7B69518A9B68C00F3E004 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 81F7B69318A9B68C00F3E004 /* InfoPlist.strings */; };
 		81F7B69718A9B68C00F3E004 /* AOC_Wk2Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 81F7B69618A9B68C00F3E004 /* AOC_Wk2Tests.m */; };
+		81F7B6A218AB017300F3E004 /* icon-120 copy 2.png in Resources */ = {isa = PBXBuildFile; fileRef = 81F7B6A018AB017300F3E004 /* icon-120 copy 2.png */; };
+		81F7B6A318AB017300F3E004 /* iPhone5@2x copy.png in Resources */ = {isa = PBXBuildFile; fileRef = 81F7B6A118AB017300F3E004 /* iPhone5@2x copy.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,8 @@
 		81F7B69218A9B68C00F3E004 /* AOC_Wk2Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AOC_Wk2Tests-Info.plist"; sourceTree = "<group>"; };
 		81F7B69418A9B68C00F3E004 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		81F7B69618A9B68C00F3E004 /* AOC_Wk2Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AOC_Wk2Tests.m; sourceTree = "<group>"; };
+		81F7B6A018AB017300F3E004 /* icon-120 copy 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon-120 copy 2.png"; path = "../../../../../Art/Photoshop/icon-120 copy 2.png"; sourceTree = "<group>"; };
+		81F7B6A118AB017300F3E004 /* iPhone5@2x copy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "iPhone5@2x copy.png"; path = "../../../../../Art/Photoshop/iPhone5@2x copy.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +116,8 @@
 		81F7B67118A9B68C00F3E004 /* AOC_Wk2 */ = {
 			isa = PBXGroup;
 			children = (
+				81F7B6A018AB017300F3E004 /* icon-120 copy 2.png */,
+				81F7B6A118AB017300F3E004 /* iPhone5@2x copy.png */,
 				81F7B67A18A9B68C00F3E004 /* AOCAppDelegate.h */,
 				81F7B67B18A9B68C00F3E004 /* AOCAppDelegate.m */,
 				81F7B67D18A9B68C00F3E004 /* Main.storyboard */,
@@ -229,6 +235,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				81F7B6A318AB017300F3E004 /* iPhone5@2x copy.png in Resources */,
+				81F7B6A218AB017300F3E004 /* icon-120 copy 2.png in Resources */,
 				81F7B68418A9B68C00F3E004 /* Images.xcassets in Resources */,
 				81F7B67618A9B68C00F3E004 /* InfoPlist.strings in Resources */,
 				81F7B67F18A9B68C00F3E004 /* Main.storyboard in Resources */,
@@ -461,6 +469,7 @@
 				81F7B69C18A9B68C00F3E004 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		81F7B69D18A9B68C00F3E004 /* Build configuration list for PBXNativeTarget "AOC_Wk2Tests" */ = {
 			isa = XCConfigurationList;
@@ -469,6 +478,7 @@
 				81F7B69F18A9B68C00F3E004 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
