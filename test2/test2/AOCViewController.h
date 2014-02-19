@@ -8,6 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-@interface AOCViewController : UIViewController
+@interface AOCViewController : UIViewController{
+    
+    UILabel *dateLabel;
+    UITextField *textField;
+    
+}
 
 @end

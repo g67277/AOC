@@ -461,6 +461,7 @@
 				81F7B65B18A9B00500F3E004 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		81F7B65C18A9B00500F3E004 /* Build configuration list for PBXNativeTarget "test2Tests" */ = {
 			isa = XCConfigurationList;
@@ -469,6 +470,7 @@
 				81F7B65E18A9B00500F3E004 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
