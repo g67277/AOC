@@ -13,7 +13,7 @@
                         <viewControllerLayoutGuide type="bottom" id="BwT-0c-nWd"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Date Planner" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YeN-5X-SpH">
@@ -24,7 +24,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xBX-y7-DQf">
-                                <rect key="frame" x="5" y="85" width="310" height="419"/>
+                                <rect key="frame" x="5" y="80" width="310" height="330"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <string key="text">                                                                                                                                                                             Tap Add Event to Start...</string>
@@ -33,7 +33,7 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N6f-Qi-KOB">
-                                <rect key="frame" x="5" y="518" width="310" height="44"/>
+                                <rect key="frame" x="5" y="427" width="310" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="0.97737456822955382" blue="0.99212542753502075" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="italicSystem" pointSize="26"/>
@@ -49,7 +49,7 @@
                         </subviews>
                         <color key="backgroundColor" red="0.99383729696273804" green="0.71777363137151595" blue="0.21240432926337482" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
-                    <nil key="simulatedStatusBarMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                     <connections>
                         <outlet property="mainEvents" destination="xBX-y7-DQf" id="wxn-Uf-Ghb"/>
                     </connections>
@@ -67,7 +67,7 @@
                         <viewControllerLayoutGuide type="bottom" id="dBD-iN-0dJ"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="f67-9U-wuE">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I4C-tD-05T">
@@ -119,12 +119,13 @@
                                 <textInputTraits key="textInputTraits" returnKeyType="done"/>
                             </textField>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="NSLogo2.png" translatesAutoresizingMaskIntoConstraints="NO" id="J1l-N7-Cog">
-                                <rect key="frame" x="50" y="289" width="221" height="212"/>
+                                <rect key="frame" x="50" y="255" width="221" height="212"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.99383729696273804" green="0.67899090318474886" blue="0.23950693874978987" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                     <connections>
                         <outlet property="eventField" destination="sXU-LT-Y6f" id="d3n-RC-eo3"/>
                         <outlet property="hideKeyboard" destination="MFC-qb-zVR" id="Bjk-eC-BEh"/>
@@ -133,7 +134,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ygl-1m-h1z" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1181" y="62"/>
+            <point key="canvasLocation" x="1184" y="-26"/>
         </scene>
     </scenes>
     <resources>
