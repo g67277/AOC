@@ -16,9 +16,27 @@
 @synthesize eventField;
 @synthesize delegate = _delegate;
 
+//-------------------Returns text from textField to first view----------------
+
 - (IBAction)saveAndReturn:(id)sender{
     [self.delegate done:eventField.text];    
 }
+//----------------------------------------------------------------------------
+
+//---------------------------- Hides Keyboard --------------------------------
+
+- (IBAction)hideKey:(id)sender{
+
+    [self returnKey:eventField];
+}
+
+- (BOOL) returnKey:(UITextField*)textField{
+    if (textField) {
+        [textField resignFirstResponder];
+    }
+    return NO;
+}
+//----------------------------------------------------------------------------
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {

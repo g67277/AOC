@@ -14,8 +14,10 @@
 @end
 
 @implementation AOCViewController
-@synthesize mainEvent;
-@synthesize test;
+@synthesize mainEvents;
+
+
+//---------- Method to move to different views based on segue identifier ---------------
 
 - (void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
     
@@ -24,17 +26,43 @@
         eventView.delegate = self;
     }
 }
+//-------------------------------------------------------------------------------------
+
+//---------- Dismisses the second view and adds the text to the TextView---------------
 
 - (void) done:(NSString*)text{
     
     [self dismissViewControllerAnimated:YES completion:Nil];
-    mainEvent.text = text;
-    test.text = text;
     
+    // clears the text if its the first entry
+    if (index == 1) {
+        mainEvents.text = @"";
+    }
+    
+    NSString *currentEvent = [NSString stringWithFormat:@"Event %d: %@\n", index, text];
+    NSString *allEvents = [mainEvents.text stringByAppendingString:currentEvent];
+    NSLog(@"%@", allEvents);
+    
+    mainEvents.text = allEvents;
+    
+    index++;
 }
+//-------------------------------------------------------------------------------------
+
+
+//---------- Hiding Keyboard when touching anything but the field----------------------
+
+- (void) touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event{
+    
+    [mainEvents resignFirstResponder];
+}
+//-------------------------------------------------------------------------------------
+
 
 - (void)viewDidLoad
 {
+    index = 1;
+    
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
 }

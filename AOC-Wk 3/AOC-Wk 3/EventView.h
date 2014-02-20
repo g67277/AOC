@@ -29,5 +29,6 @@
 @property (nonatomic, assign) id <eventDelegate> delegate;
 
 - (IBAction)saveAndReturn:(id)sender;
+- (IBAction)hideKey:(id)sender;
 
 @end

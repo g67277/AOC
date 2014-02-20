@@ -12,11 +12,11 @@
 @interface AOCViewController : UIViewController <eventDelegate>{
     
     IBOutlet UITextView *mainEvents;
-    IBOutlet UITextField *test;
+    
+    int index;
     
 }
 
-@property (nonatomic, strong) UITextView *mainEvent;
-@property (nonatomic, strong) UITextField *test;
+@property (nonatomic, strong) UITextView *mainEvents;
 
 @end
