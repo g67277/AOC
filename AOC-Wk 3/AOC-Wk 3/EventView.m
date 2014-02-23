@@ -19,7 +19,12 @@
 //-------------------Returns text from textField to first view----------------
 
 - (IBAction)saveAndReturn:(id)sender{
-    [self.delegate done:eventField.text];    
+    BOOL  error = [self.delegate done:eventField.text];
+    if (error) {
+        
+    }else{
+        errorLabel.hidden = false;
+    }
 }
 //----------------------------------------------------------------------------
 
@@ -37,15 +42,6 @@
     return NO;
 }
 //----------------------------------------------------------------------------
-
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
-{
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization
-    }
-    return self;
-}
 
 - (void)viewDidLoad
 {

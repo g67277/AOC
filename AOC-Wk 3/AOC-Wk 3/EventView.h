@@ -11,7 +11,7 @@
 @protocol eventDelegate <NSObject>
 
 @required
-- (void) done:(NSString*)eventText;
+- (BOOL) done:(NSString*)eventText;
 
 @end
 
@@ -20,6 +20,7 @@
     IBOutlet UITextField *eventField;
     IBOutlet UIButton *save;
     IBOutlet UIButton *hideKeyboard;
+    IBOutlet UILabel *errorLabel;
     
     id delegate;
     

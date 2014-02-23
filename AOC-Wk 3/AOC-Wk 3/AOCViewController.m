@@ -30,22 +30,29 @@
 
 //---------- Dismisses the second view and adds the text to the TextView---------------
 
-- (void) done:(NSString*)text{
+- (BOOL) done:(NSString*)text{
     
-    [self dismissViewControllerAnimated:YES completion:Nil];
+    if (text.length == 0) {
+        return NO;
+    }else{
     
-    // clears the text if its the first entry
-    if (index == 1) {
-        mainEvents.text = @"";
+        [self dismissViewControllerAnimated:YES completion:Nil];
+    
+        // clears the text if its the first entry
+        if (index == 1) {
+            mainEvents.text = @"";
+        }
+    
+        NSString *currentEvent = [NSString stringWithFormat:@"Event %d: %@\n", index, text];
+        NSString *allEvents = [mainEvents.text stringByAppendingString:currentEvent];
+        NSLog(@"%@", allEvents);
+    
+        mainEvents.text = allEvents;
+    
+        index++;
     }
     
-    NSString *currentEvent = [NSString stringWithFormat:@"Event %d: %@\n", index, text];
-    NSString *allEvents = [mainEvents.text stringByAppendingString:currentEvent];
-    NSLog(@"%@", allEvents);
-    
-    mainEvents.text = allEvents;
-    
-    index++;
+    return YES;
 }
 //-------------------------------------------------------------------------------------
 
@@ -62,6 +69,7 @@
 - (void)viewDidLoad
 {
     index = 1;
+
     
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.

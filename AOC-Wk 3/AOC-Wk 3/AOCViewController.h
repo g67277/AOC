@@ -11,8 +11,7 @@
 
 @interface AOCViewController : UIViewController <eventDelegate>{
     
-    IBOutlet UITextView *mainEvents;
-    
+    IBOutlet UITextView *mainEvents;    
     int index;
     
 }
