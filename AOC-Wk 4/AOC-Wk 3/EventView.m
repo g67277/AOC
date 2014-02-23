@@ -17,6 +17,8 @@
 @synthesize eventString;
 @synthesize count;
 
+//--------------------- Sending info back to main page ------------------------
+
 - (void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
     
     if ([segue.identifier isEqualToString:@"toMain"]) {
@@ -24,18 +26,6 @@
         count = eventField.text.length;
     }
 }
-
-
-//-------------------Returns text from textField to first view----------------
-
-/*- (IBAction)saveAndReturn:(id)sender{
-    BOOL  error = [self.delegate done:eventField.text];
-    if (error) {
-        
-    }else{
-        errorLabel.hidden = false;
-    }
-}*/
 //----------------------------------------------------------------------------
 
 //---------------------------- Hides Keyboard --------------------------------
