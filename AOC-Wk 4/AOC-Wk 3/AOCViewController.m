@@ -16,18 +16,6 @@
 @implementation AOCViewController
 @synthesize mainEvents;
 
-
-//---------- Method to move to different views based on segue identifier ---------------
-
-/*- (void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
-    
-    if ([segue.identifier isEqualToString:@"toEvent"]) {
-        EventView *eventView = segue.destinationViewController;
-        eventView.delegate = self;
-    }
-}*/
-//-------------------------------------------------------------------------------------
-
 //---------- Dismisses the second view and adds the text to the TextView---------------
 
 - (IBAction) done:(UIStoryboardSegue*)segue{
