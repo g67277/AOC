@@ -20,7 +20,7 @@
 
 @property (nonatomic, strong) UITextField *eventField;
 @property (nonatomic, strong) NSString *eventString;
-@property (nonatomic) int count;
+@property (nonatomic) long count;
 
 
 - (IBAction)hideKey:(id)sender;

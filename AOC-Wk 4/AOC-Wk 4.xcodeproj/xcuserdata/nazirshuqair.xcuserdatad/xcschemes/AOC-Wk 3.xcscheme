@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "819861EB18B5567C009710BB"
-               BuildableName = "AOC-Wk 3.app"
+               BuildableName = "AOC-Wk 4.app"
                BlueprintName = "AOC-Wk 4"
                ReferencedContainer = "container:AOC-Wk 4.xcodeproj">
             </BuildableReference>
@@ -33,7 +33,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "8198620C18B5567C009710BB"
-               BuildableName = "AOC-Wk 3Tests.xctest"
+               BuildableName = "AOC-Wk 4Tests.xctest"
                BlueprintName = "AOC-Wk 4Tests"
                ReferencedContainer = "container:AOC-Wk 4.xcodeproj">
             </BuildableReference>
@@ -43,7 +43,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "819861EB18B5567C009710BB"
-            BuildableName = "AOC-Wk 3.app"
+            BuildableName = "AOC-Wk 4.app"
             BlueprintName = "AOC-Wk 4"
             ReferencedContainer = "container:AOC-Wk 4.xcodeproj">
          </BuildableReference>
@@ -62,7 +62,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "819861EB18B5567C009710BB"
-            BuildableName = "AOC-Wk 3.app"
+            BuildableName = "AOC-Wk 4.app"
             BlueprintName = "AOC-Wk 4"
             ReferencedContainer = "container:AOC-Wk 4.xcodeproj">
          </BuildableReference>
@@ -80,7 +80,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "819861EB18B5567C009710BB"
-            BuildableName = "AOC-Wk 3.app"
+            BuildableName = "AOC-Wk 4.app"
             BlueprintName = "AOC-Wk 4"
             ReferencedContainer = "container:AOC-Wk 4.xcodeproj">
          </BuildableReference>

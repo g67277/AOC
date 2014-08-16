@@ -9,12 +9,15 @@
 #import <UIKit/UIKit.h>
 #import "EventView.h"
 
-@interface AOCViewController : UIViewController {
+@interface AOCViewController : UIViewController <UIAlertViewDelegate> {
     
     IBOutlet UITextView *mainEvents;    
     int index;
+    IBOutlet UILabel *cleared;
     
 }
+
+- (IBAction)onClick:(id)sender;
 
 @property (nonatomic, strong) UITextView *mainEvents;
 

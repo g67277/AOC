@@ -19,13 +19,29 @@
 
 //--------------------- Sending info back to main page ------------------------
 
-- (void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+- (BOOL) shouldPerformSegueWithIdentifier:(NSString *)identifier sender:(id)sender{
+    
+    count = eventField.text.length;
+    
+    if (count == 0) {
+        errorLabel.hidden = NO;
+        return NO;
+    }
+    if ([identifier isEqualToString:@"toMain"]) {
+        eventString = eventField.text;
+        
+    }
+    return YES;
+    
+}
+
+/*- (void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
     
     if ([segue.identifier isEqualToString:@"toMain"]) {
         eventString = eventField.text;
         count = eventField.text.length;
     }
-}
+}*/
 //----------------------------------------------------------------------------
 
 //---------------------------- Hides Keyboard --------------------------------

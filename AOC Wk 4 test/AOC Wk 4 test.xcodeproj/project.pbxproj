@@ -472,6 +472,7 @@
 				8143511A18BA5A86000B0146 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8143511B18BA5A86000B0146 /* Build configuration list for PBXNativeTarget "AOC Wk 4 testTests" */ = {
 			isa = XCConfigurationList;
@@ -480,6 +481,7 @@
 				8143511D18BA5A86000B0146 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
