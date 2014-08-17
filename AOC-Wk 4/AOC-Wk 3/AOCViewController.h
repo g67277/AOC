@@ -11,7 +11,7 @@
 
 @interface AOCViewController : UIViewController <UIAlertViewDelegate> {
     
-    IBOutlet UITextView *mainEvents;    
+    //IBOutlet UITextView *mainEvents;
     int index;
     IBOutlet UILabel *cleared;
     
@@ -19,6 +19,6 @@
 
 - (IBAction)onClick:(id)sender;
 
-@property (nonatomic, strong) UITextView *mainEvents;
+@property (nonatomic, strong) IBOutlet UITextView *mainEvents;
 
 @end
